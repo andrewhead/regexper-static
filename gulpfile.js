@@ -17,7 +17,7 @@ gulp.task('default', ['server', 'docs'], function() {
 
 gulp.task('svg-server', ['server'], function() {
   var REGEXPER_ADDR = 'http://127.0.0.1:8080';
-  var SVG_SERVER_PORT = 8000;
+  var SVG_SERVER_PORT = 8001;
   var svgServer = require('./svg_server');
   svgServer.start(SVG_SERVER_PORT, REGEXPER_ADDR);
 });
